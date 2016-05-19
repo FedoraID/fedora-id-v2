@@ -38,7 +38,7 @@
 				</div>
 				<div class="col-xs-12 col-md-6">
 					<div class="header-download-button">
-						<a href="https://getfedora.org/" class="btn fd-btn-download"><i class="fl-fedora" style="padding-right: 5px;"></i> Download Fedora</a>
+						<a href="https://getfedora.org/" class="btn fd-btn-download" target="_blank"><i class="fl-fedora" style="padding-right: 5px;"></i> Download Fedora</a>
 					</div>
 				</div>
 			</div>
