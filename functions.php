@@ -110,6 +110,19 @@ function fedora_id_v2_widgets_init() {
 }
 add_action( 'widgets_init', 'fedora_id_v2_widgets_init' );
 
+function my_new_contactmethods( $contactmethods ) {
+	// Add Twitter
+	$contactmethods['twitter'] = 'Twitter';
+	//add Facebook
+	$contactmethods['facebook'] = 'Facebook';
+	//add Github
+	$contactmethods['github'] = 'Github';
+
+	return $contactmethods;
+}
+
+add_filter('user_contactmethods','my_new_contactmethods',10,1);
+
 /**
  * Enqueue scripts and styles.
  */

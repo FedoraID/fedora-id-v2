@@ -32,7 +32,7 @@
 
 					if ( 'post' === get_post_type() ) : ?>
 					<div class="fd-entry-meta">
-						<?php fedora_id_v2_posted_on(); ?>
+					  <i class="fa fa-calendar" style="padding-right: 5px;"></i> <?php the_date(); ?>
 					</div><!-- .entry-meta -->
 					<?php
 					endif; ?>
@@ -60,6 +60,24 @@
 							data-layout="button_count">
 						</div>
 				</footer><!-- .entry-footer -->
+        <div class="fd-author-box">
+          	<div class="row">
+              <div class="col-xs-12 col-md-2">
+                <?php echo get_avatar( get_the_author_meta( 'ID' ), 100 ); ?>
+              </div>
+          		<div class="col-xs-12 col-md-10">
+                <h4>Author: <strong><?php the_author(); ?></strong></h4>
+                <p><?php $authorDesc = the_author_meta('description'); echo $authorDesc; ?></p>
+                <ul>
+                  <li><a href="<?php $authorWeb = the_author_meta('url'); echo $authorWeb; ?>"><i class="fa fa-globe fa-lg"></i></a></li>
+                  <li><a href="mailto:<?php $authorMail = the_author_meta('email'); echo $authorMail; ?>"><i class="fa fa-envelope fa-lg"></i></a></li>
+                  <li><a href="<?php $authorFB = the_author_meta('facebook'); echo $authorFB; ?>"><i class="fa fa-facebook-official fa-lg"></i></a></li>
+                  <li><a href="<?php $authorTW = the_author_meta('twitter'); echo $authorTW; ?>"><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li><a href="<?php $authorGH = the_author_meta('github'); echo $authorGH; ?>"><i class="fa fa-github fa-lg"></i></a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
 			</article><!-- #post-## -->
 		</div>
 	</div>

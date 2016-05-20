@@ -37,6 +37,9 @@ hr {
   margin-left: auto;
 }
 
+.byline {
+    display: none !important;
+}
 
 /* -------------------------------- HEADER -------------------------------- */
 
@@ -315,6 +318,27 @@ h1.fd-entry-title {
   text-align: center;
 }
 
+.fd-author-box {
+  border: 1px solid #EEEEEE;
+  padding: 15px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.fd-author-box ul {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.fd-author-box li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+img.avatar-100 {
+  border-radius: 50%;
+  margin-top: 15px;
+}
 
 /* -------------------------------- FOOTER -------------------------------- */
 

@@ -37,12 +37,12 @@ get_header(); ?>
 											?>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-8">
+									<div class="col-xs-12 col-md-7">
 										<div class="fd-post-title">
 											<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
 										</div>
 									</div>
-									<div class="col-xs-12 col-md-2 hidden-xs">
+									<div class="col-xs-12 col-md-3 hidden-xs">
 										<div class="fd-posted-on">
 											<?php fedora_id_v2_posted_on(); ?>
 										</div>
