@@ -42,7 +42,7 @@ hr {
 }
 
 .fd-btn-download {
-  background: #2980B9;
+  background: #3498db;
   padding: 15px 45px;
   color: #FFFFFF;
   border: none;
@@ -74,7 +74,7 @@ hr {
 }
 
 .site-title .primary {
-  color: #2980B9;
+  color: #3498db;
   font-weight: 400;
 }
 
@@ -106,7 +106,7 @@ hr {
 }
 
 .fd-post-title a {
-  color: #2980B9;
+  color: #3498db;
   text-decoration: none;
 }
 
@@ -226,7 +226,7 @@ hr {
 }
 
 .fd-btn-buy {
-  background: #F42;
+  background: #3498db;
   padding: 15px;
   color: #FFFFFF;
   border: none;
@@ -248,7 +248,7 @@ hr {
 }
 
 .fd-btn-search {
-  background: #F42;
+  background: #3498db;
   padding: 15px 14px 13px 14px;
   color: #FFFFFF;
   border: none;
