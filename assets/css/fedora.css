@@ -52,22 +52,6 @@ hr {
   border-radius: 50px;
 }
 
-.fd-btn-buy {
-  background: #F42;
-  padding: 15px;
-  color: #FFFFFF;
-  border: none;
-  font-weight: 500;
-  font-size: 12px;
-  text-align: center;
-  border-radius: 50px;
-  font-weight: 700;
-}
-
-.fd-btn-buy a {
-  color: #FFFFFF !important;
-}
-
 .header-download-button a {
   color: #FFFFFF;
   text-decoration: none;
@@ -192,6 +176,24 @@ hr {
   font-weight: bold;
 }
 
+.fd-category-uncategorized {
+  background-color: #bdc3c7;
+  border-color: transparent;
+  padding: 3px 10px 5px 10px;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.fd-category-komunitas {
+  background-color: #34495e;
+  border-color: transparent;
+  padding: 3px 10px 5px 10px;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 .fd-sidebar-box-1 {
   border: 1px solid #EEEEEE;
   padding: 15px;
@@ -221,6 +223,23 @@ hr {
   text-align: center;
   margin-bottom: 20px;
   color: #777777;
+}
+
+.fd-btn-buy {
+  background: #F42;
+  padding: 15px;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.fd-btn-buy a {
+  color: #FFFFFF !important;
 }
 
 .search-field {

@@ -62,10 +62,6 @@ get_header(); ?>
 							<p style="line-height: 25px;">Mari dukung komunitas Fedora Indonesia dengan membeli polo resmi fedora.or.id ini. Sebagian dari keuntungan penjualan akan di donasikan ke komunitas fedora.or.id :-)</p>
 							<a href="" class="btn fd-btn-buy" style="color: rgb(255, 255, 255);"><i class="fa fa-shopping-cart fa-lg" style="padding-right: 5px;"></i> Masukan Keranjang</a>
 						</div>
-						<div class="fd-sidebar-box-2">
-							<p><h3 style="margin-top: 10px;">I do open source because it's <strong>fun</strong> and it <strong>works</strong>…</h3></p>
-							<small>- Linus Torvalds -</small>
-						</div>
 						<div class="fd-search-form-box">
 							<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 							  <label>
@@ -77,6 +73,10 @@ get_header(); ?>
 							  </label>
 							  <input type="submit" class="fd-btn-search" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
 							</form>
+						</div>
+						<div class="fd-sidebar-box-2">
+							<p><h3 style="margin-top: 10px;">I do open source because it's <strong>fun</strong> and it <strong>works</strong>…</h3></p>
+							<small>- Linus Torvalds -</small>
 						</div>
 					</div>
 				</div>
