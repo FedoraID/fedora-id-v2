@@ -17,6 +17,9 @@
   js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.6&appId=271149826605832";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  LineIt.loadButton();
+</script>
 
 <div class="container-narrow">
 	<div class="row">
@@ -54,11 +57,19 @@
 				</div><!-- .entry-content -->
 
 				<footer class="fd-entry-footer">
-					<!-- Your share button code -->
-						<div class="fb-share-button"
-							data-href="<?php echo get_permalink(); ?>"
-							data-layout="button_count">
-						</div>
+					<!-- Facebook Share Button -->
+					<p>
+            <div class="fb-share-button"
+  						data-href="<?php echo get_permalink(); ?>"
+  						data-layout="button_count">
+					  </div>
+          </p>
+          <!-- LINE Share Button Desktop -->
+          <div class="line-it-button" style="display: none;" data-type="share-a" data-lang="en"></div>
+          <!-- Line Shate Button Mobile -->
+          <span>
+            <script type="text/javascript">new media_line_me.LineButton({"pc":false,"lang":"en","type":"a"});</script>
+          </span>
 				</footer><!-- .entry-footer -->
         <div class="fd-author-box">
           	<div class="row">

@@ -41,31 +41,6 @@ hr {
     display: none !important;
 }
 
-/* -------------------------------- HEADER -------------------------------- */
-
-.site-title {
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 90px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.site-title .primary {
-  color: #2980B9;
-  font-weight: 400;
-}
-
-.site-title .secondary {
-  color: #333333;
-}
-
-.header-download-button {
-  text-align: right;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .fd-btn-download {
   background: #2980B9;
   padding: 15px 45px;
@@ -101,6 +76,32 @@ hr {
 .header-download-button a:hover {
   color: #FFFFFF;
   text-decoration: none;
+}
+
+
+/* -------------------------------- HEADER -------------------------------- */
+
+.site-title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 90px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.site-title .primary {
+  color: #2980B9;
+  font-weight: 400;
+}
+
+.site-title .secondary {
+  color: #333333;
+}
+
+.header-download-button {
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 
@@ -214,6 +215,30 @@ hr {
   font-weight: 300;
 }
 
+.fd-search-form-box {
+  border: 1px solid #EEEEEE;
+  padding: 20px 15px 17px 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #777777;
+}
+
+.search-field {
+  height: 45px;
+  width: 100%;
+}
+
+.fd-btn-search {
+  background: #F42;
+  padding: 15px 14px 13px 14px;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 700;
+}
 
 /* -------------------------------- SINGLE -------------------------------- */
 
@@ -418,6 +443,43 @@ img.avatar-100 {
 
   .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
     font-size: 20px;
+  }
+
+  .fd-sidebar-box-1 {
+    text-align: center;
+  }
+
+  .fd-author-box {
+    text-align: center;
+  }
+
+  .fd-sidebar-box-2 {
+    text-align: center;
+  }
+
+  .header-download-button {
+    display: none;
+  }
+
+  .lead {
+    font-size: 17px;
+
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .fd-btn-search {
+    width: 100%;
+  }
+
+  .fd-search-form-box label {
+    width: 100%;
+  }
+
+  .fd-entry-content h2 {
+    line-height: 25px;
   }
 
 }

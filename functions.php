@@ -124,6 +124,14 @@ function my_new_contactmethods( $contactmethods ) {
 add_filter('user_contactmethods','my_new_contactmethods',10,1);
 
 /**
+ * Add Search Form support.
+ */
+function wpdocs_after_setup_theme() {
+    add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
+
+/**
  * Enqueue scripts and styles.
  */
 function fedora_id_v2_scripts() {
@@ -161,12 +169,16 @@ function fedora_id_v2_scripts() {
 
 	// BOOTSTRAP JS
 	wp_enqueue_script( 'bootstrapJS', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'bootstrapJS', get_template_directory_uri() . '/assets/js/npm.js', array(), '20151215', true );
+	wp_enqueue_script( 'bootstrapNpmJS', get_template_directory_uri() . '/assets/js/npm.js', array(), '20151215', true );
 	wp_enqueue_script( 'customJS', get_template_directory_uri() . '/assets/js/fedora.js', array(), '20151215', true );
 
-	// BOOTSTRAP JS
+	// _S JS
 	wp_enqueue_script( 'fedora-id-v2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'fedora-id-v2-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	// LINE JS
+	wp_enqueue_script( 'lineJS', get_template_directory_uri() . '/assets/js/loader.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'lineMobileJS', get_template_directory_uri() . '/assets/js/line-button.js', array(), '20140411', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

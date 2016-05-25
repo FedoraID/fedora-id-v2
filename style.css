@@ -1,6 +1,6 @@
 /*
 Theme Name: Fedora Indonesia V2
-Theme URI: http://underscores.me/
+Theme URI: http://fedora.or.id/
 Author: Zea
 Author URI: http://github.com/alzearafat/
 Description: Official Theme of Fedora Indoneisa. Ini adalah tema resmi dari Fedora Linux Indonesia (fedora.or.id). Tema ini dibangun menggunakan Bootstrap framework.
@@ -414,7 +414,7 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
-button,
+/*button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -516,7 +516,7 @@ input[type="color"] {
 textarea {
 	padding-left: 3px;
 	width: 100%;
-}
+}*/
 
 /*--------------------------------------------------------------
 # Navigation
