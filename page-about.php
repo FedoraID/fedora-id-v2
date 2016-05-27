@@ -78,7 +78,6 @@ get_header(); ?>
                   <img src="<?php echo get_site_url(); ?>/wp-content/themes/fedora-id-v2/assets/img/you-face.gif" />
                 </p>
 								<h4>Kamu!</h4>
-								<p><a href="http://fedora.or.id/gabung">Gabung Yuk!</a></p>
               </div>
             </div>
 						<div class="col-xs-12 col-md-2">
@@ -87,10 +86,19 @@ get_header(); ?>
 									<img src="<?php echo get_site_url(); ?>/wp-content/themes/fedora-id-v2/assets/img/you-face.gif" />
 								</p>
 								<h4>Kamu!</h4>
-								<p><a href="http://fedora.or.id/gabung">Gabung Yuk!</a></p>
 							</div>
 						</div>
           </div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div align="center">
+								<a href="http://fedora.or.id/gabung" target="_blank">
+									<div class="fd-btn-gabung">
+										<i class="fl-fedora" style="padding-right: 5px;"></i> Yuk gabung <strong>Fedora Indonesia</strong> Heroes!
+									</div>
+								</a>
+							</div>
+						</div>
         </div>
 			</div>
 		</main><!-- #main -->

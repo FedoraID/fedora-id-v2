@@ -495,6 +495,33 @@ img.avatar-100 {
   color: #777777;
 }
 
+.fd-btn-gabung {
+  background-color: transparent;
+  border: 2px solid #3c6eb4;
+  color: #3c6eb4;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  max-width: 400px;
+  font-size: 20px;
+}
+
+.fd-btn-gabung:hover {
+  background-color: #3c6eb4;
+  border: 2px solid #3c6eb4;
+  color: #FFFFFF;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  max-width: 400px;
+}
+
 /* -------------------------------- FOOTER -------------------------------- */
 
 #colophon {
@@ -643,6 +670,34 @@ img.avatar-100 {
 
   .fd-entry-content h2 {
     line-height: 25px;
+  }
+
+  .fd-btn-gabung {
+    background-color: transparent;
+    border: 1px solid #3c6eb4;
+    color: #3c6eb4;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    max-width: 350px;
+    font-size: 12px;
+  }
+
+  .fd-btn-gabung:hover {
+    background-color: #3c6eb4;
+    border: 1px solid #3c6eb4;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    max-width: 350px;
+    font-size: 12px;
   }
 
 }
