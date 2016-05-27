@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 }
 
 a {
-  color: #2980B9;
+  color: #3c6eb4;
   text-decoration: none !important;
 }
 
@@ -38,11 +38,87 @@ hr {
 }
 
 .byline {
-    display: none !important;
+  display: none !important;
+}
+
+.strike {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #2C3E50;
+    padding: 30px 30px 30px 30px;
+}
+
+.strike > span {
+    position: relative;
+    display: inline-block;
+}
+
+.strike > span:before,
+.strike > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 1px;
+    background: #2C3E50;
+}
+
+.strike > span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.strike > span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+.strike h3 {
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* -------------------------------- HEADER -------------------------------- */
+
+.site-title {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 90px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.site-title .primary {
+  color: #3c6eb4;
+  font-weight: 400;
+}
+
+.site-title .secondary {
+  color: #333333;
+}
+
+.header-download-button {
+  text-align: right;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .fd-btn-download {
-  background: #3498db;
+  background: #3c6eb4;
+  padding: 15px 45px;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.fd-btn-download:hover {
+  background: #4aa3df;
   padding: 15px 45px;
   color: #FFFFFF;
   border: none;
@@ -62,33 +138,6 @@ hr {
   text-decoration: none;
 }
 
-
-/* -------------------------------- HEADER -------------------------------- */
-
-.site-title {
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 90px;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.site-title .primary {
-  color: #3498db;
-  font-weight: 400;
-}
-
-.site-title .secondary {
-  color: #333333;
-}
-
-.header-download-button {
-  text-align: right;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-
 /* -------------------------------- HOMEPAGE -------------------------------- */
 
 .lead {
@@ -106,7 +155,7 @@ hr {
 }
 
 .fd-post-title a {
-  color: #3498db;
+  color: #3c6eb4;
   text-decoration: none;
 }
 
@@ -132,7 +181,7 @@ hr {
 }
 
 .fd-category-desktop {
-  background-color: #3498DB;
+  background-color: #3498db;
   border-color: transparent;
   padding: 3px 10px 5px 10px;
   border-radius: 50px;
@@ -226,7 +275,20 @@ hr {
 }
 
 .fd-btn-buy {
-  background: #3498db;
+  background: #3c6eb4;
+  padding: 15px;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 700;
+  width: 100%;
+}
+
+.fd-btn-buy:hover {
+  background: #4aa3df;
   padding: 15px;
   color: #FFFFFF;
   border: none;
@@ -248,7 +310,7 @@ hr {
 }
 
 .fd-btn-search {
-  background: #3498db;
+  background: #3c6eb4;
   padding: 15px 14px 13px 14px;
   color: #FFFFFF;
   border: none;
@@ -258,6 +320,19 @@ hr {
   border-radius: 3px;
   font-weight: 700;
 }
+
+.fd-btn-search:hover {
+  background: #4aa3df;
+  padding: 15px 14px 13px 14px;
+  color: #FFFFFF;
+  border: none;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
 
 /* -------------------------------- SINGLE -------------------------------- */
 
@@ -273,7 +348,7 @@ h1.fd-entry-title {
 }
 
 .fd-entry-meta a {
-  color: #2980B9;
+  color: #3c6eb4;
 }
 
 .fd-entry-content p {
@@ -307,7 +382,7 @@ h1.fd-entry-title {
 }
 
 .comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous a {
-  color: #2980B9;
+  color: #3c6eb4;
   text-decoration: none;
 }
 
@@ -324,7 +399,7 @@ h1.fd-entry-title {
 }
 
 .comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next a {
-  color: #2980B9;
+  color: #3c6eb4;
   text-decoration: none;
 }
 
@@ -347,7 +422,7 @@ h1.fd-entry-title {
 }
 
 .panel-footer a {
-  color: #2980B9;
+  color: #3c6eb4;
 }
 
 .text-center {
@@ -384,12 +459,48 @@ img.avatar-100 {
   margin-top: 15px;
 }
 
+/* -------------------------------- ABOUT -------------------------------- */
+
+.fd-about p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.4em;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.fd-team {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.fd-team img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter:grayscale(100%);
+}
+
+.fd-team img:hover {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  filter:none;
+}
+
+.fd-team p {
+  font-size: 12px;
+  color: #777777;
+}
+
 /* -------------------------------- FOOTER -------------------------------- */
 
 #colophon {
   border-top: 1px solid #EEEEEE;
   margin-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   background-color: #fbfbfb;
 }
 
@@ -409,9 +520,9 @@ img.avatar-100 {
 }
 
 .list-unstyled {
-    padding-left: 0;
-    margin-left: 0px;
-    list-style: none;
+  padding-left: 0;
+  margin-left: 0px;
+  list-style: none;
 }
 
 .list-unstyled li {
@@ -419,7 +530,7 @@ img.avatar-100 {
 }
 
 .footer-link {
-  color: #2980B9 !important;
+  color: #3c6eb4 !important;
 }
 
 .footer-link a {
@@ -431,9 +542,42 @@ img.avatar-100 {
 }
 
 .site-info a {
-  color: #2980B9 !important;
+  color: #3c6eb4 !important;
 }
 
+.fd-btn-facebook {
+  margin-top: 12px;
+  background: #777777;
+  padding: 5px;
+  color: #FFFFFF;
+  border: none;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 170px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.fd-btn-facebook:hover {
+  margin-top: 12px;
+  background: #3b5998;
+  padding: 5px;
+  color: #FFFFFF;
+  border: none;
+  font-size: 11px;
+  text-align: center;
+  border-radius: 3px;
+  font-weight: 400;
+  width: 170px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.fd-btn-facebook i {
+  padding-right: 5px;
+}
 
 /* -------------------------------- MEDIA QUERIES -------------------------------- */
 

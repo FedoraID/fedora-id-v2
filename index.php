@@ -20,7 +20,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="col-xs-12 col-md-8">
 						<p class="lead">
-							FEDORA.OR.ID adalah komunitas Fedora Indonesia pertama yang didirikan tahun 2006. Website ini dibangun untuk menyajikan tutorial, tips & trik, dan berita seputar Fedora Linux dalam bahasa Indonesia. Tulisan pada website ini adalah kontribusi dari komunitas.
+							FEDORA.OR.ID adalah komunitas Fedora Indonesia pertama yang didirikan tahun 2006. Website ini dibangun untuk menyajikan tutorial, tips & trik, dan berita seputar Fedora Linux dalam bahasa Indonesia. Tulisan pada website ini adalah kontribusi dari komunitas. <a href="http://fedora.or.id/tentang-fedora-indonesia/">Lebih jauh tentang kami...</a>
 						</p>
 						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 						<article id="post-<?php the_ID(); ?>">
@@ -79,7 +79,6 @@ get_header(); ?>
 							<small>- Linus Torvalds -</small>
 						</div>
 					</div>
-				</div>
 				</div>
 			</div>
 		</main><!-- #main -->
