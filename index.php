@@ -56,11 +56,38 @@ get_header(); ?>
 						<?php endif; ?>
 					</div>
 					<div class="col-xs-12 col-md-4">
+						<div class="fd-sidebar-box-0">
+							<a href="http://fedora.or.id/gabung/" target="_blank">
+								<div class="fd-btn-tulis">
+									<i class="fa fa-cloud-upload fa-lg"></i> Tulis Artikel
+								</div>
+							</a>
+						</div>
 						<div class="fd-sidebar-box-1">
-							<p><img src="<?php echo esc_url( home_url( '/' ) ); ?>/wp-content/themes/fedora-id-v2/assets/img/fedora-polo.jpg" /></p>
-							<strong><h4>#IDR 180k (Pre-Order)</h4></strong>
-							<p style="line-height: 25px;">Mari dukung komunitas Fedora Indonesia dengan membeli polo resmi fedora.or.id ini. Sebagian dari keuntungan penjualan akan di donasikan ke komunitas fedora.or.id :-)</p>
-							<a href="" class="btn fd-btn-buy" style="color: rgb(255, 255, 255);"><i class="fa fa-shopping-cart fa-lg" style="padding-right: 5px;"></i> Masukan Keranjang</a>
+							<h3>Top Author</h3>
+							<?php
+								$blogusers = get_users_of_blog();
+								 if ($blogusers) {
+										 $au = array();
+										 foreach ($blogusers as $bloguser) {
+												$user = get_userdata($bloguser->user_id);
+												$post_count = count_user_posts($user->ID);
+												$au[] = array('user_id' => $user->ID , 'nicename' => $user->user_nicename, 'display_name' => $user->display_name, 'email' => $user->user_email ,'post_count' => $post_count);
+										 }
+
+										 //Sort array
+										 $au = authors_orderBy($au, 'post_count');
+
+										//then loop through the authors
+										foreach ($au as $aut){
+											if ($aut['post_count'] > 0) {
+												 echo '<li>';
+												 echo '<a href="'.get_bloginfo('url').'/author/' . $aut['nicename'] . '">'.get_avatar($aut['email'], '36').'</a>';
+												 echo '<a href="'.get_bloginfo('url').'/author/' . $aut['nicename'] . '">'.$aut['display_name'] .' ('.$aut['post_count'].')</a><li>';
+											}
+										}
+								 }
+							 ?>
 						</div>
 						<div class="fd-search-form-box">
 							<form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">

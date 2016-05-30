@@ -131,6 +131,14 @@ function wpdocs_after_setup_theme() {
 }
 add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
 
+//function to sort array by filed
+function authors_orderBy($data, $field){
+	 $code = "if (\$a['$field'] == \$b['$field']) {return 0;} return (\$a['$field'] < \$b['$field']) ? 1 : -1;";
+	 usort($data, create_function('$a,$b', $code));
+	 return $data;
+}
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -152,7 +160,7 @@ function fedora_id_v2_scripts() {
 	wp_enqueue_style('linuxiconCSS');
 
 	// CUSTOM
-	wp_register_style('custom-style', get_template_directory_uri() . '/assets/css/fedora.css');
+	wp_register_style('custom-style', get_template_directory_uri() . '/assets/css/fedora.min.css');
 	wp_enqueue_style('custom-style');
 
 	// GOOGLE FONT

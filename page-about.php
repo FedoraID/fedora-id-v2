@@ -77,7 +77,7 @@ get_header(); ?>
                 <p>
                   <img src="<?php echo get_site_url(); ?>/wp-content/themes/fedora-id-v2/assets/img/you-face.gif" />
                 </p>
-								<h4>Kamu!</h4>
+								<h4>Kamu!</h4>  
               </div>
             </div>
 						<div class="col-xs-12 col-md-2">
