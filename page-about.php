@@ -75,9 +75,10 @@ get_header(); ?>
             <div class="col-xs-12 col-md-2">
               <div class="fd-team">
                 <p>
-                  <img src="<?php echo get_site_url(); ?>/wp-content/themes/fedora-id-v2/assets/img/you-face.gif" />
+                  <img src="<?php echo get_site_url(); ?>/wp-content/themes/fedora-id-v2/assets/img/mandala.jpg" style="height: 162px;" />
                 </p>
-								<h4>Kamu!</h4>  
+								<h4>Mandala Rizky Arinanta</h4>
+								<p>Staff & Kontributor</p>
               </div>
             </div>
 						<div class="col-xs-12 col-md-2">
