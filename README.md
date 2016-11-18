@@ -1,3 +1,7 @@
+![Fedora.or.id](http://fedora.or.id/wp-content/uploads/2016/11/Screenshot-at-2016-11-18-135344.png "Fedora.or.id")
+
+[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)]() [![GitHub release](https://img.shields.io/github/release/qubyte/rubidium.svg)]() [![WordPress](https://img.shields.io/wordpress/v/akismet.svg)]() [![PyPI](https://img.shields.io/pypi/status/Django.svg)]()
+
 Sambil menunggu rilisnya Fedora 25 yang (kalau tidak di undur) akan rilis pada tanggal 22 November besok, saya memutuskan untuk meng-open source'kan theme wordpress yang men-tenagai website fedora.or.id ini.
 
 Sebenarnya saya sudah lama ingin membagikan source code dari theme ini, tetapi masih menunggu theme ini cukup stabil dan battle tested terlebih dahulu, baru saya bagikan :)
@@ -5,7 +9,7 @@ Sebenarnya saya sudah lama ingin membagikan source code dari theme ini, tetapi m
 
 ### What it is?
 
-wordpressSeperti yang sebagian mungkin sudah tau, fedora.or.id ini adalah PHP application yang dibangun di atas WordPress framework, Bootstrap Framework, MySQL, serta effort dan kemauan untuk membuat theme kami sendiri.
+Seperti yang sebagian mungkin sudah tau, fedora.or.id ini adalah PHP application yang dibangun di atas WordPress framework, Bootstrap Framework, MySQL, serta effort dan kemauan untuk membuat theme kami sendiri.
 
 Kami membangun portal ini untuk memberikan kemudahan bagi pengguna Fedora di tanah air atau calon pengguna Fedora untuk lebih mengenal lebih dekat dengan distro Fedora.
 
@@ -14,16 +18,16 @@ Kami membangun portal ini untuk memberikan kemudahan bagi pengguna Fedora di tan
 
 "Theme ini bukan theme untuk semua orang, lalu kenapa meng-open source'kan nya?", beberapa alasan kenapa theme ini kami open source kan :
 
-    - Kami cinta open source. Karir kami (saya khusus nya) sangat bergantung pada dunia open source. Tanpa open source, tidak mungkin kami bisa seperti sekarang. Dan rasanya aneh, kalau portal tentang linux/open source justru kode nya tertutup
-    - WordPress sangat terkenal di Indonesia, tetapi developernya masih sangat sedikit. Dengan di open source'kan nya theme ini, kami berharap bisa menjadi bahan pembelajaran, atau minimal inspirasi untuk calon-calon developer WordPress tanah air diluar sana. We want to throw our hat in the ring and hopefully others will follow.
-    - Fedora.or.id adalah website berbasis komunitas, semua bekerja dengan sukarela. Dengan meng-open source'kan theme ini, maka kami berharap akan lebih banyak bantuan dari komunitas seperti laporan bug, request fitur, pull request, dll.
+- Kami cinta open source. Karir kami (saya khusus nya) sangat bergantung pada dunia open source. Tanpa open source, tidak mungkin kami bisa seperti sekarang. Dan rasanya aneh, kalau portal tentang linux/open source justru kode nya tertutup
+- WordPress sangat terkenal di Indonesia, tetapi developernya masih sangat sedikit. Dengan di open source'kan nya theme ini, kami berharap bisa menjadi bahan pembelajaran, atau minimal inspirasi untuk calon-calon developer WordPress tanah air diluar sana. We want to throw our hat in the ring and hopefully others will follow.
+- Fedora.or.id adalah website berbasis komunitas, semua bekerja dengan sukarela. Dengan meng-open source'kan theme ini, maka kami berharap akan lebih banyak bantuan dari komunitas seperti laporan bug, request fitur, pull request, dll.
 
 
 #### What it's good for
 
 Absolutely nothing! Oh, sorry, that's war.
 
-    > Jika kamu sedang belajar membuat theme WordPress, atau sedang mencari inspirasi, mungkin theme ini bisa membantu kamu memahami bagaimana membuat theme WP
+> Jika kamu sedang belajar membuat theme WordPress, atau sedang mencari inspirasi, mungkin theme ini bisa membantu kamu memahami bagaimana membuat theme WP
 
 Tapi bukan berarti theme ini sudah sempurna, theme ini masih jauh dari kata sempurna. Bahkan theme ini kurang cocok digunakan untuk website "umum", karena masih banyak hard code dimana-mana (Yuckk!)
 
